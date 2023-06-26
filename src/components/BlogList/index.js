@@ -37,10 +37,10 @@ class BlogList extends Component {
 
     return (
       <div className="blogs-list-container">
-        {/* FIX16: The testid attribute value should be "loader" */}
+        {/* FIX16: The data-testid attribute value should be "loader" */}
         {isLoading ? (
           // eslint-disable-next-line react/no-unknown-property
-          <div testid="loader">
+          <div data-testid="loader">
             <Loader type="TailSpin" color="#00bfff" height={50} width={50} />
           </div>
         ) : (
